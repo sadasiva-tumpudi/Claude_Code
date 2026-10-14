@@ -1,0 +1,7 @@
+# Archived: 2026-07-09-devin-parity-hardening.md
+
+Packed in [`historical.tar.gz`](../../historical.tar.gz). See [`docs/archive/README.md`](../../README.md).
+
+```bash
+tar -xzf docs/archive/historical.tar.gz -C /tmp superpowers/plans/2026-07-09-devin-parity-hardening.md
+```

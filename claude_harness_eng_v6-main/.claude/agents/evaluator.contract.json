@@ -1,0 +1,20 @@
+{
+  "agent": "evaluator",
+  "may_spawn": false,
+  "artifact_roots": [
+    ".claude/runs/",
+    "specs/evaluation/",
+    "specs/reviews/",
+    "sprint-contracts/"
+  ],
+  "why": "Skeptical verifier — it never generates. It finalises the sprint contract during negotiation and updates features.json after a run; otherwise it writes verdicts and evidence only",
+  "artifact_files": [
+    "features.json"
+  ],
+  "forbidden_once": [
+    {
+      "root": "sprint-contracts/",
+      "when_exists": "specs/reviews/contract-freeze.json"
+    }
+  ]
+}
